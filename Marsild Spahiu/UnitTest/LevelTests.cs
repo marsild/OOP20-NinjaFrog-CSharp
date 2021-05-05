@@ -7,14 +7,19 @@ using System.Text;
 namespace UnitTest
 {
     [TestClass]
-    public class Test
+    public class LevelTests
     {
         [TestMethod]
-        public void LevelTests()
+        public void LevelOneTest()
         {
             ILevel levelOne = new LevelOne();
-            ILevel levelTwo = new LevelTwo();
             Assert.AreEqual("level1.tmx", levelOne.Map);
+        }
+
+        [TestMethod]
+        public void LevelTwoTest()
+        {
+            ILevel levelTwo = new LevelTwo();
             Assert.AreEqual("level2.tmx", levelTwo.Map);
         }
     }
