@@ -6,6 +6,6 @@ namespace SpahiuProject
 {
     public interface ILevel
     {
-        string GetMap();
+        string Map { get; }
     }
 }

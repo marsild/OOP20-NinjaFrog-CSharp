@@ -6,9 +6,6 @@ namespace SpahiuProject
 {
     public sealed class LevelOne : ILevel
     {
-        public string GetMap()
-        {
-            return "level1.tmx";
-        }
+        public string Map => "level1.tmx";
     }
 }
