@@ -6,6 +6,6 @@ namespace SpahiuProject
 {
     interface Level
     {
-        string Map { get; }
+        string GetMap();
     }
 }
