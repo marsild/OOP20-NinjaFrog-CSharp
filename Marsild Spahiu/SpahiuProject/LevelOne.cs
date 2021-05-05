@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SpahiuProject
 {
-    class LevelOne : Level
+    public sealed class LevelOne : ILevel
     {
         public string GetMap()
         {
