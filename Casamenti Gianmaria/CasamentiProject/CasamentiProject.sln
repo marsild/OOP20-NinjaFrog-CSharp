@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasamentiProject", "CasamentiProject\CasamentiProject.csproj", "{CFCEFB2A-BA27-43B4-8D3A-D3F02977A7D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasamentiTest", "CasamentiTest\CasamentiTest.csproj", "{FB4E9A75-F279-44AD-9719-764E5C745D9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFCEFB2A-BA27-43B4-8D3A-D3F02977A7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFCEFB2A-BA27-43B4-8D3A-D3F02977A7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFCEFB2A-BA27-43B4-8D3A-D3F02977A7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFCEFB2A-BA27-43B4-8D3A-D3F02977A7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4E9A75-F279-44AD-9719-764E5C745D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4E9A75-F279-44AD-9719-764E5C745D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4E9A75-F279-44AD-9719-764E5C745D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4E9A75-F279-44AD-9719-764E5C745D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7C33A47-1626-4D1E-A367-6AAD7957F1FC}
+	EndGlobalSection
+EndGlobal

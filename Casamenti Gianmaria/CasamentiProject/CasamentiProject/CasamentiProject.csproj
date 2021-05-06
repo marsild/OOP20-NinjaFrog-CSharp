@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{387CDB31-AB00-48A9-B5D8-6FB99E00281E}</ProjectGuid>
+    <ProjectGuid>{CFCEFB2A-BA27-43B4-8D3A-D3F02977A7D9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Casamenti_project</RootNamespace>
-    <AssemblyName>Casamenti project</AssemblyName>
+    <RootNamespace>CasamentiProject</RootNamespace>
+    <AssemblyName>CasamentiProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FruitPowerUp\FruitBuilderImpl.cs" />
-    <Compile Include="FruitPowerUp\FruitPowerUpImpl.cs" />
-    <Compile Include="FruitPowerUp\FruitTypeEnum.cs" />
-    <Compile Include="FruitPowerUp\IFruitPowerUp.cs" />
-    <Compile Include="FruitPowerUp\IFruitBuilder.cs" />
-    <Compile Include="Utilyties\IPlayScreen.cs" />
-    <Compile Include="Utilyties\Main.cs" />
+    <Compile Include="FruitBuilderImpl.cs" />
+    <Compile Include="FruitPowerUpImpl.cs" />
+    <Compile Include="FruitTypeEnum.cs" />
+    <Compile Include="IFruitBuilder.cs" />
+    <Compile Include="IFruitPowerUp.cs" />
+    <Compile Include="IPlayScreen.cs" />
+    <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

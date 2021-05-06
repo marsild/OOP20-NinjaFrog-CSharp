@@ -1,6 +1,8 @@
-﻿namespace Casamenti_project.FruitPowerUp
+﻿using System;
+
+namespace CasamentiProject
 {
-    internal class FruitPowerUpImpl : IFruitPowerUp
+    public class FruitPowerUpImpl : IFruitPowerUp
     {
         private IPlayScreen screen;
         private float x;
@@ -18,6 +20,16 @@
         public void print()
         {
             System.Console.WriteLine(screen + " " + x + " " + y + " " + type);
+        }
+
+        public float getY()
+        {
+            return y;
+        }
+
+        public float getX()
+        {
+            return x;
         }
 
         public void Collide()

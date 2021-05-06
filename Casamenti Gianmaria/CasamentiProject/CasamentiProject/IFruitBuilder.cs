@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Casamenti_project.FruitPowerUp
+namespace CasamentiProject
 {
     public interface IFruitBuilder
     {

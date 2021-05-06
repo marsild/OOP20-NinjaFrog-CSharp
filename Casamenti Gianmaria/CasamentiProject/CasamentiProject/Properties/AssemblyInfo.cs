@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Le informazioni generali relative a un assembly sono controllate dal seguente 
 // set di attributi. Modificare i valori di questi attributi per modificare le informazioni
 // associate a un assembly.
-[assembly: AssemblyTitle("Casamenti project")]
+[assembly: AssemblyTitle("CasamentiProject")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP Inc.")]
-[assembly: AssemblyProduct("Casamenti project")]
+[assembly: AssemblyProduct("CasamentiProject")]
 [assembly: AssemblyCopyright("Copyright © HP Inc. 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Se il progetto viene esposto a COM, il GUID seguente verrà utilizzato come ID della libreria dei tipi
-[assembly: Guid("387cdb31-ab00-48a9-b5d8-6fb99e00281e")]
+[assembly: Guid("cfcefb2a-ba27-43b4-8d3a-d3f02977a7d9")]
 
 // Le informazioni sulla versione di un assembly sono costituite dai seguenti quattro valori:
 //

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Casamenti_project
+namespace CasamentiProject
 {
     public class FruitTypeEnum
     {

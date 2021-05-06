@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Casamenti_project.FruitPowerUp
+namespace CasamentiProject
 {
 	/// <summary>
 	/// Definition of FruitPowerUp interface.
