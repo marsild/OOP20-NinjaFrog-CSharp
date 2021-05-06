@@ -22,6 +22,11 @@ namespace CasamentiProject
             System.Console.WriteLine(screen + " " + x + " " + y + " " + type);
         }
 
+        public FruitTypeEnum.FruitType GetTypeEnum()
+        {
+            return type;
+        }
+
         public float getY()
         {
             return y;
