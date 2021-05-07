@@ -12,13 +12,15 @@ namespace SpahiuProject
         private const int DESTROYED_CELL = 988;
         private const int MillisecondsTimeout = 100;
         private bool destroyed;
+        private bool threadOn;
         private readonly PlayScreen playScreen;
         private int destroyedTile;
         public Brick(PlayScreen screen)
         {
-            destroyed = false;
-            playScreen = screen;
-            destroyedTile = CELL_NOT_SET;
+            this.destroyed = false;
+            this.playScreen = screen;
+            this.threadOn = false;
+            this.destroyedTile = CELL_NOT_SET;
         }
         public int Score
         {
@@ -30,24 +32,32 @@ namespace SpahiuProject
 
         public void Collide()
         {
-            if(destroyedTile == CELL_NOT_SET)
+            if(this.destroyedTile == CELL_NOT_SET)
             {
-                destroyedTile = DESTROYED_CELL;
+                this.destroyedTile = DESTROYED_CELL;
             }
-            new Thread(() =>
+            while (this.threadOn)
             {
-                try
+
+            }
+            if (!this.destroyed)
+            {
+                this.threadOn = true; ;
+                new Thread(() =>
                 {
-                    Thread.Sleep(MillisecondsTimeout);
-                }
-                catch (ThreadInterruptedException ex)
-                {
-                    Console.WriteLine(ex.StackTrace);
-                }
-                destroyed = true;
-                Console.WriteLine("ciao");
-            }).Start();
-            playScreen.AddScore(this);
+                    try
+                    {
+                        Thread.Sleep(MillisecondsTimeout);
+                    }
+                    catch (ThreadInterruptedException ex)
+                    {
+                        Console.WriteLine(ex.StackTrace);
+                    }
+                    this.destroyed = true;
+                    this.threadOn = false;
+                }).Start();
+                playScreen.AddScore(this);
+            }
         }
         public bool Destroyed
         {

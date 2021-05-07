@@ -33,7 +33,29 @@ namespace UnitTest
                 Assert.IsTrue(brick.Destroyed);
             }).Start();
             Assert.AreEqual(988, brick.Tile);
-            Assert.AreEqual(screenScore + brick.Score, screen.Score);
+            screenScore += brick.Score;
+            Assert.AreEqual(screenScore, screen.Score);
+            brick.Collide();
+            Assert.AreEqual(screenScore, screen.Score);
+        }
+
+        [TestMethod]
+        public void FruitBoxTest()
+        {
+            PlayScreen screen = new PlayScreen();
+            FruitBox fruitBox = new FruitBox(screen);
+            int screenScore = screen.Score;
+            Assert.AreEqual(0, screenScore);
+            Assert.AreEqual(-1, fruitBox.Tile);
+            Assert.IsTrue(fruitBox.Interactive);
+            Assert.IsFalse(screen.FruitSpawned);
+            fruitBox.Collide();
+            Assert.IsFalse(fruitBox.Interactive);
+            Assert.AreEqual(998, fruitBox.Tile);
+            screenScore += fruitBox.Score;
+            Assert.AreEqual(screenScore, screen.Score);
+            fruitBox.Collide();
+            Assert.AreEqual(screenScore, screen.Score);
         }
     }
 }

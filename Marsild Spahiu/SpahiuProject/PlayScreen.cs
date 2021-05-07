@@ -8,12 +8,18 @@ namespace SpahiuProject
     {
         public PlayScreen()
         {
-            Score = 0;
+            this.FruitSpawned = false;
+            this.Score = 0;
         }
         public void AddScore(ICollidable entity)
         {
             Score += entity.Score;
         }
+        public void SpawnFruit()
+        {
+            this.FruitSpawned = true;
+        }
         public int Score { get; private set; }
+        public bool FruitSpawned { get; private set; }
     }
 }
