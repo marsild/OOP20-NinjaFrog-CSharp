@@ -20,15 +20,15 @@ namespace Frog
                   
                     case 2:
                         Console.WriteLine("Running left");
-                        return "running left";
+                        return "Running left";
                         
                     case 3:
                         Console.WriteLine("Running right");
-                        return "running right";
+                        return "Running right";
                         
                     case 4:
                         Console.WriteLine("Jumping");
-                        return "jumping";
+                        return "Jumping";
                         
                        
                 }
