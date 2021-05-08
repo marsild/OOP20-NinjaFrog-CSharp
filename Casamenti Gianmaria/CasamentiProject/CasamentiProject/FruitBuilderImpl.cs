@@ -17,7 +17,7 @@ namespace CasamentiProject
         {
             return new FruitBuilderImpl();
         }
-        public IFruitPowerUp Build()
+        public FruitPowerUpImpl Build()
         {
             return new FruitPowerUpImpl(this.screen, this.x, this.y, this.type);
         }

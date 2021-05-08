@@ -16,7 +16,7 @@ namespace CasamentiProject
 
         IFruitBuilder SelectFruitType(FruitTypeEnum.FruitType type);
 
-        IFruitPowerUp Build();
+        FruitPowerUpImpl Build();
 
     }
 }

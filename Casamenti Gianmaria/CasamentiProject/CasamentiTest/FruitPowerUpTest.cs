@@ -43,7 +43,5 @@ namespace CasamentiTest
             Assert.AreEqual(type, fruit.GetTypeEnum());
         }
 
-
-
     }
 }
