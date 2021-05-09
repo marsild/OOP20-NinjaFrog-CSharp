@@ -10,7 +10,7 @@ namespace PasiniProject
 
 
 
-    public class EnemyModelImpl : ICollidable, IEnemyModel
+    public class EnemyModelImpl : IEnemyModel
     {
         private float stateTime;
         private bool destroyed;

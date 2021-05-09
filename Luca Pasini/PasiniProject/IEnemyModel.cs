@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PasiniProject
 { 
 
-	public interface IEnemyModel 
+	public interface IEnemyModel : ICollidable
 	{
 
 		void Update();

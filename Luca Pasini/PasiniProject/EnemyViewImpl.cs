@@ -11,8 +11,8 @@ namespace PasiniProject
         private bool isKillable;
         private float x;
         private float y;
-        private EnemyModelImpl model;
-        public EnemyViewImpl(EnemyModelImpl model)
+        private IEnemyModel model;
+        public EnemyViewImpl(IEnemyModel model)
         {
             this.model = model;
             this.isKillable = true;

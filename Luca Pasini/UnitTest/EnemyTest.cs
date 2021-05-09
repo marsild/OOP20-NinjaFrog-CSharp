@@ -11,8 +11,8 @@ namespace UnitTest
         [TestMethod]
         public void EnemiesTest()
         {
-            EnemyModelImpl model = new EnemyModelImpl();
-            EnemyViewImpl view = new EnemyViewImpl(model);
+            IEnemyModel model = new EnemyModelImpl();
+            IEnemyView view = new EnemyViewImpl(model);
             Assert.AreEqual(3f, model.StateTime);
             Assert.AreEqual(false, model.Destroyed);
             Assert.AreEqual(false, model.SetToDestroy);
@@ -30,9 +30,6 @@ namespace UnitTest
             Assert.AreEqual(false, view.Killable);
             Assert.AreEqual(0, view.X);
             Assert.AreEqual(0, view.Y);
-
-
-
         }
     }
 }
