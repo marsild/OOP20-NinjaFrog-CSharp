@@ -40,7 +40,7 @@ namespace UnitTest
             builder.SelectObject(Object).ChooseCategoryBit(GROUND).Build();
         }
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException), "Screen can't be null.")]
+        [ExpectedException(typeof(ArgumentNullException), "Object can't be null.")]
         public void Exception2Test()
         {
             PlayScreen screen = new PlayScreen();
